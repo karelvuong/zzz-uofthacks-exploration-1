@@ -36,8 +36,6 @@ config[:css_dir] = 'assets/stylesheets'
 config[:js_dir] = 'assets/javascript'
 config[:images_dir] = 'assets/images'
 config[:relative_links] = true
-set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 ### ---------------------------------------------------------------------------
 # Environments

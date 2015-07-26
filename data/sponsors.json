@@ -3,19 +3,19 @@
     {
       "name": "Product Hunt",
       "url": "https://producthunt.com",
-      "src": "/assets/images/logo-product-hunt.svg",
+      "src": "assets/images/logo-product-hunt.svg",
       "height": "200"
     },
     {
       "name": "Vidyard",
       "url": "http://vidyard.com",
-      "src": "/assets/images/logo-vidyard.svg",
+      "src": "assets/images/logo-vidyard.svg",
       "height": "50"
     },
     {
       "name": "Videostream",
       "url": "http://getvideostream.com",
-      "src": "/assets/images/logo-videostream.svg",
+      "src": "assets/images/logo-videostream.svg",
       "height": "50"
     }
   ],
@@ -23,25 +23,25 @@
     {
       "name": "Thalmic Labs",
       "url": "https://thalmiclabs.com",
-      "src": "/assets/images/logo-thalmic-labs.svg",
+      "src": "assets/images/logo-thalmic-labs.svg",
       "height": "30"
     },
     {
       "name": "Igloo Software",
       "url": "https://igloosoftware.com",
-      "src": "/assets/images/logo-igloo.svg",
+      "src": "assets/images/logo-igloo.svg",
       "height": "30"
     },
     {
       "name": "bithound",
       "url": "https://bithound.io",
-      "src": "/assets/images/logo-bithound.svg",
+      "src": "assets/images/logo-bithound.svg",
       "height": "30"
     },
     {
       "name": "Slack",
       "url": "https://slack.com",
-      "src": "/assets/images/logo-slack.svg",
+      "src": "assets/images/logo-slack.svg",
       "height": "30"
     }
   ]
