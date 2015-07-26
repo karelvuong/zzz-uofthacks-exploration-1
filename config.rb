@@ -51,7 +51,7 @@ configure :build do
   activate :minify_html
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash, :ignore => %r{^assets/images/share_facebook.jpg}
+  activate :asset_hash, :ignore => %r{^assets/images/bg-intro.jpg}
   activate :relative_assets
 end
 
