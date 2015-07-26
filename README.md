@@ -1,5 +1,3 @@
-# UofTHacks – Exploration #1
+# UofTHacks 2016 – Exploration #1
 
-The website for Product Hunt Kitchener-Waterloo community chapter.
-
-The website was built using [Middleman](www.middlemanapp.com).
+This is in no way a design for UofTHacks 2016. Just messing around. :wink:
