@@ -64,15 +64,8 @@ end
 # Deploy
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method   = :git
+  deploy.method = :git
 end
-
-# Google Analytics
-# activate :google_analytics do |ga|
-#   ga.tracking_id = 'UA-58877182-1'
-#   ga.minify = true
-# end
-
 
 # Synta Highlighting
 activate :syntax, :line_numbers => true

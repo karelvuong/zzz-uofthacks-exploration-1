@@ -2,4 +2,4 @@
 
 User-agent: *
 
-Sitemap: http://www.producthuntkw.com/sitemap.xml
+Sitemap: http://www.uofthacks.com/sitemap.xml
