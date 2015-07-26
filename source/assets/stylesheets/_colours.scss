@@ -1,0 +1,84 @@
+@each $color, $clr in $colors {
+  .accent-#{$color} {
+    .accent-bg {
+      background-color: $clr;
+
+      &-10 {
+        background-color: rgba($clr, 0.1);
+      }
+    }
+    .accent-clr { color: $clr; }
+    .accent-btn {
+      background-color: $clr;
+      border-color: $clr;
+      color: #fff;
+
+      &:hover {
+        background-color: darken($clr, 10%);
+        border-color: darken($clr, 10%);
+      }
+    }
+
+    .masthead { background-color: $clr; }
+  }
+
+  .clr-#{$color} {
+    color: $clr;
+
+    &--before::before { background-color: $clr; }
+    &--after::after { background-color: $clr; }
+  }
+
+  .clr-link-#{$color} {
+    color: $clr;
+
+    &:focus,
+    &:hover {
+      color: darken($clr, 5%);
+    }
+  }
+
+  .fill-#{$color} {
+    fill: $clr;
+  }
+
+  .bg-#{$color} {
+    background-color: $clr;
+
+    &--before::before { background-color: $clr; }
+    &--after::after { background-color: $clr; }
+  }
+
+  .bg-#{$color}-ds {
+    background-color: darken(desaturate($clr, 10%), 10%);
+
+    &--before::before { background-color: darken(desaturate($clr, 10%), 10%); }
+    &--after::after { background-color: darken(desaturate($clr, 10%), 10%); }
+  }
+
+  .btn-#{$color} {
+    background-color: $clr;
+    border-color: $clr;
+    color: #ffffff;
+
+    &:focus,
+    &:hover {
+      background-color: darken($clr, 5%);
+      border-color: darken($clr, 5%);
+      color: #ffffff;
+    }
+  }
+
+  .btn-inverse-#{$color} {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: $clr;
+
+    &:focus,
+    &:hover {
+      background-color: darken($clr, 10%);
+      border-color: darken($clr, 10%);
+      color: #ffffff;
+    }
+  }
+}

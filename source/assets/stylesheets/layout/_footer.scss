@@ -1,0 +1,57 @@
+.uh-footer {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1px rgba(#000, .25);
+  height: $footer-height;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @include translate(0, 100%);
+  @include transition(all 500ms cubic-bezier(0.68, 0, 0.265, 1));
+
+  &.headroom--not-top {
+    @include translate(0, 0%);
+  }
+
+  &-social {
+    margin: 5px 0;
+
+    &-link {
+      border: 1px solid #DDDDDD;
+      border-radius: 2px;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      @include transition(all 200ms cubic-bezier(0.68, 0, 0.265, 1));
+
+      &:hover {
+        border-color: #CCCCCC;
+        text-decoration: none;
+      }
+
+      .fa-facebook-official { color: #3B5998; }
+      .fa-twitter { color: #55ACEE; }
+    }
+
+    &-count {
+      color: #777777;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+
+  form {
+    display: inline-block;
+  }
+
+  .input-group {
+    margin: 5px 0;
+  }
+
+  input {
+    background-color: #EEEEEE;
+    border: 0;
+    height: 40px;
+  }
+}

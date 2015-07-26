@@ -1,0 +1,36 @@
+.has-accent-dot,
+.has-accent-square,
+.has-accent-stripe {
+  &.before::before,
+  &.after::after {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin-bottom: 1px;
+  }
+
+  &.before::before,
+  &.after::after {
+    width: 8px;
+  }
+
+  &.before::before { margin-right: 5px; }
+  &.after::after   { margin-left: 5px; }
+}
+
+.has-accent-stripe.before::before,
+.has-accent-stripe.after::after {
+  height: 9px;
+  margin-bottom: 0;
+  width: 3px;
+}
+
+.has-accent-dot {
+  &.before::before,
+  &.after::after {
+    border-radius: 100%;
+  }
+}
+
+.has-accent-square {
+}

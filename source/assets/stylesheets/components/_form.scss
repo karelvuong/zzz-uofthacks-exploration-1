@@ -1,0 +1,57 @@
+::-webkit-input-placeholder {
+  color: $text-color;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  background-color: $input-bg-color;
+  border: 1px solid;
+  border-radius: $button-radius;
+  border-color: $input-border-color;
+  font-family: $font-family-sans-serif;
+  height: 32px;
+  padding: 8px 12px;
+
+  &:focus {
+    border-color: $input-border-focus-color;
+    color: $input-text-focus-color;
+    outline: none;
+  }
+}
+
+// Checkbox
+.checkbox-group {
+  font-size: 12px;
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+}
+
+.input-group {
+  display: inline-block;
+
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    float: left;
+
+    &:hover,
+    &:focus {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:hover {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

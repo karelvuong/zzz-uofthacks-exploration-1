@@ -1,0 +1,188 @@
+<section class="intro">
+  <div class="intro-inner">
+    <div class="container">
+      <img class="intro-logo" src="/assets/images/logo-uofthacks-line--white.svg" alt="" />
+
+      <p class="intro-tagline">The University of Toronto's <br><strong>3<sup>rd</sup></strong> annual hackathon is almost here.</p>
+
+      <div class="row">
+        <form class="" action="#" method="post">
+          <div class="input-group">
+            <input class="intro-input" type="email" name="email-intro" placeholder="Email address">
+            <input class="intro-btn btn-uh-green btn" type="submit" name="name" value="Subscribe to updates">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="navigation">
+  <div class="site-header-inner">
+    <div class="container">
+      <ul class="site-header-links nav text-center">
+        <% data.header.navigation.each do |link| %>
+        <li class="site-header-link"><%= link_to link.name, link.url, :data => { :scroll => nil } %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="text section--md">
+  <header class="section-header">
+    <div class="container text-center">
+      <h1 class="section-header-title">About</h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm">
+      <p class="lead text-center">
+        We are the the University of Toronto's<br> annual hackathon.
+      </p>
+
+      <p>
+        <strong>/ˈhakəθɒn/</strong>: An event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.
+      </p>
+
+      <p>
+        We look past this traditional definition of a hackathon and bring it to new heights. At UofTHacks, we bring people together to make new friends, learn new things, and bring new ideas to life.
+      </p>
+    </div>
+  </div>
+</section>
+
+<img src="/assets/images/bg-about.svg" alt="" />
+
+<section id="why" class="text text--inverse bg-uh-lightblue section--md">
+  <header class="section-header">
+    <div class="container container--sm text-center">
+      <h1 class="section-header-title">Why Attend?</h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm">
+      <p class="lead text-center">To try new things, meet new people, and to <br>take your skills to higher summits.</p>
+
+      <p>
+        Join us and <strong>499</strong> other brilliant developers, creative designers, and innovative creators for <strong>36 hours</strong> of hacking.
+      </p>
+
+      <p>
+        With awesome hardware, APIs, and assistance provided to you by our sponsors, you will have the opportunity to build something you never thought was possible.
+      </p>
+
+      <p class="lead">
+        All it takes is the willingness to try something new.
+      </p>
+
+      <p>
+        You don't have to be a pro to attend. If this will be your <strong>first hackathon</strong>, we want you to expose you to the world of creation.
+      </p>
+
+      <p>
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="text section--md">
+  <header class="section-header">
+    <div class="container container--sm">
+      <h1 class="section-header-title text-center">FAQ</h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="text text--inverse bg-uh-blue section--md">
+  <header class="section-header">
+    <div class="container container--sm">
+      <h1 class="section-header-title text-center">Location</h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="sponsors" class="text section--md">
+  <header class="section-header">
+    <div class="container container--sm text-center">
+      <h1 class="section-header-title">Sponsors <small>2015</small></h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm">
+      <p class="lead text-center">
+        UofTHacks 2015 would not have been possible <br class="visible-lg">without these fantastic sponsors.
+      </p>
+
+      <p>
+        If you are interested in becoming a sponsor or partner, connect with us at <%= link_to data.emails.sponsors, "mailto:" + data.emails.sponsors %>.
+      </p>
+    </div>
+
+    <div class="logo-salad container text-center">
+      <% if !data.sponsors.featured.nil? %>
+      <div class="logo-salad-section">
+        <% data.sponsors.featured.each do |sponsor| %>
+        <div class="row">
+          <% link_to sponsor.url, :class => "logo-salad-logo", :target => "_blank" do %>
+          <%= tag :img, :src => sponsor.src, :alt => sponsor.name, :height => sponsor.height %>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+
+      <% if !data.sponsors.support.nil? %>
+      <div class="logo-salad-section">
+        <% data.sponsors.support.each do |sponsor| %>
+        <% link_to sponsor.url, :class => "logo-salad-logo", :target => "_blank" do %>
+        <%= tag :img, :src => sponsor.src, :alt => sponsor.name, :height => sponsor.height %>
+        <% end %>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="text text--inverse bg-uh-darkblue section--md">
+  <header class="section-header">
+    <div class="container container--sm">
+      <h1 class="section-header-title text-center">Contact</h1>
+    </div>
+  </header>
+
+  <div class="section-body">
+    <div class="container container--sm text-center">
+      <p class="lead text-center">
+        We'd love to chat.
+      </p>
+
+      <p>
+        If you have any questions or concerns as a hacker or are interested in becoming a partner or sponsor with UofTHacks, connect with us at:
+      </p>
+
+      <%= link_to data.emails.sponsors, "mailto:" + data.emails.sponsors, :class => "btn-uh-blue btn" %>
+    </div>
+  </div>
+</section>

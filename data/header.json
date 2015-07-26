@@ -1,0 +1,28 @@
+{
+  "navigation": [
+    {
+      "name": "About",
+      "url": "#about"
+    },
+    {
+      "name": "Why Attend",
+      "url": "#why"
+    },
+    {
+      "name": "FAQ",
+      "url": "#faq"
+    },
+    {
+      "name": "Location",
+      "url": "#location"
+    },
+    {
+      "name": "Sponsors",
+      "url": "#sponsors"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
+}

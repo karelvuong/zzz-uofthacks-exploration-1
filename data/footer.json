@@ -1,0 +1,28 @@
+{
+  "team": [
+    {
+      "name": "Karel Vuong",
+      "role": "Co-organizer",
+      "color": "clr-ph-blue",
+      "twitter_handle": "karelvuong",
+      "twitter_url": "https://twitter.com/karelvuong"
+    },
+    {
+      "name": "Matt Gardner",
+      "role": "Co-organizer",
+      "color": "clr-ph-green",
+      "twitter_handle": "thatmattgardner",
+      "twitter_url": "https://twitter.com/thatmattgardner"
+    }
+  ],
+  "social": [
+    {
+      "name": "Facebook",
+      "url": ""
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/ProductHuntKW"
+    }
+  ]
+}

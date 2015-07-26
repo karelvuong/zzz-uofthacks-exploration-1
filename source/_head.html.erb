@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= current_page.data.title ? current_page.data.title + ' &ndash; ' : '' %>UofTHacks 2016</title>
+  <meta name="description" content="<%= current_page.data.metadata_description ? current_page.data.metadata_description : 'The official website for the Product Hunt Kitchener-Waterloo community.' %>">
+  <meta name="keywords" content="<%= current_page.data.metadata_keywords ? current_page.data.metadata_keywords : 'UofTHacks, hackathon, toronto, uoft, university, product, design, tech, startup, silicon valley' %>">
+
+  <meta name="copyright" content="2015 to Present">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta http-equiv="cleartype" content="on">
+
+  <link rel="canonical" href="http://uofthacks.com<%= current_page.url %>">
+
+  <meta property="og:title" content="<%= current_page.data.metadata_og_title ? current_page.data.metadata_og_title : 'UofTHacks 2016' %>"/>
+  <meta property="og:site_name" content="<%= current_page.data.metadata_og_site_name ? current_page.data.metadata_og_site_name : 'UofTHacks 2016' %>"/>
+  <meta property="og:description" content="<%= current_page.data.metadata_description ? current_page.data.metadata_description : 'The official website for the Product Hunt Kitchener-Waterloo community.' %>"/>
+  <meta property="og:type" content="<%= current_page.data.metadata_og_type ? current_page.data.metadata_og_type : 'Website' %>"/>
+  <meta property="og:url" content="http://producthuntkw.com<%= current_page.url %>"/>
+  <meta property="og:image" content="http://producthuntkw.com/assets/images/share_facebook.jpg"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= stylesheet_link_tag "site" %>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+</head>

@@ -1,0 +1,36 @@
+<footer class="uh-footer">
+  <div class="container">
+    <div class="uh-footer-social pull-left">
+      <a class="uh-footer-social-link" href="#">
+        <i class="fa fa-facebook-official"></i>
+        <span id="countFacebook" class="uh-footer-social-count"></span>
+
+        <script>
+          var url = "http://uofthacks.com/";
+          $.getJSON("http://graph.facebook.com/" + url, function (data){
+            $("#countFacebook").html(data.shares);
+          });
+        </script>
+      </a>
+
+      <a class="uh-footer-social-link" href="#">
+        <i class="fa fa-twitter"></i>
+        <span id="countTwitter" class="uh-footer-social-count"></span>
+
+        <script>
+          var url = "http://uofthacks.com/";
+          $.getJSON('https://cdn.api.twitter.com/1/urls/count.json?url=http://uofthacks.com/&callback=?', function (data) {
+            $('#countTwitter').text(data.count);
+          });
+        </script>
+      </a>
+    </div>
+
+    <form class="uh-footer-form pull-right" action="index.html" method="POST">
+      <div class="input-group">
+        <input type="email" name="email" value="" placeholder="Email address">
+        <button class="btn btn-uh-green" type="submit" name="button">Subscribe to updates</button>
+      </div>
+    </form>
+  </div>
+</footer>

@@ -1,0 +1,54 @@
+.uh-page {
+  padding-bottom: $footer-height;
+}
+
+.section--md {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section {
+  &-header {
+    &-title {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+
+    & + .section-body {
+      margin-top: 30px;
+    }
+
+    &-icon {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-body {
+    p {
+      margin-bottom: 0;
+
+      & + p,
+      & + .btn {
+        margin-top: 20px;
+      }
+
+      & + .lead {
+        margin-top: 30px;
+      }
+    }
+
+    .lead {
+      margin-bottom: 0;
+
+      & + p {
+        margin-top: 30px;
+      }
+    }
+
+    .lead,
+    p {
+      color: rgba(#000000, 0.8);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  background: color("uh-green");
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 12px;
+  text-transform: uppercase;
+  @include transition(all 200ms cubic-bezier(0.68, 0, 0.265, 1));
+
+  &:hover,
+  &:focus {
+    border-color: $button-border-hover-color;
+    color: $button-text-hover-color;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}

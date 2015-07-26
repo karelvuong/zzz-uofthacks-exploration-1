@@ -1,0 +1,86 @@
+.intro {
+  background-image: url("/assets/images/bg-intro.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  padding: 120px 0;
+  width: 100%;
+
+  // Elements
+  &-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &-tagline {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.215;
+    text-shadow: 0 0 10px rgba(#000, 0.3);
+  }
+
+  &-text {
+    color: rgba(#FFFFFF, 0.8);
+    line-height: 1.4125;
+  }
+
+  &-logo {
+    display: inline-block;
+    height: 200px;
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .input-group {
+    margin-top: 20px;
+
+    .intro-input {
+      background-color: #FFFFFF;
+      border: 0;
+      height: 50px;
+      padding: 12px 20px;
+    }
+
+    .intro-btn {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.text {
+  // Variations
+  &.text--inverse {
+    h1,
+    strong {
+      color: #FFFFFF;
+    }
+
+    .lead,
+    p {
+      color: rgba(#FFFFFF, 0.8);
+    }
+  }
+}
+
+.logo-salad {
+  margin-top: 60px;
+
+  &-section {
+    & + & {
+      border-top: 1px solid #ddd;
+      margin-top: 60px;
+      padding-top: 60px;
+    }
+  }
+
+  &-logo {
+    display: inline-block;
+    margin: 20px;
+  }
+}
