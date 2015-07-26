@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Karel Vuong -- Designer -- @karelvuong
+
+# THANKS
+
+    Karel Vuong
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
